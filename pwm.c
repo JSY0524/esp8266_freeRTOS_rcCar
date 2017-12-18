@@ -87,10 +87,6 @@ void user_init(void)
 {
     
     uart_set_baud(0, 115200);
-
-    printf("SDK version:%s\n", sdk_system_get_sdk_version());
-
-    printf("pwm_init(1, [14])\n");
     pins[0] = 5; //A- 오른쪽
     //pins[0] = 0; //A+ 
     pins[1] = 4; //B- 왼쪽
